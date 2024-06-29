@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="378.0" prefWidth="386.0" style="-fx-background-color: #F5D56C;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.LoginController">
+    <children>
+        <Pane layoutX="53.0" layoutY="27.0" prefHeight="325.0" prefWidth="280.0" style="-fx-background-color: #F1E8EC;">
+            <children>
+                <TextField id="email" fx:id="email" layoutX="18.0" layoutY="81.0" prefHeight="25.0" prefWidth="244.0" promptText="email" />
+                <PasswordField id="senha" fx:id="senha" layoutX="18.0" layoutY="131.0" prefHeight="25.0" prefWidth="244.0" promptText="senha" />
+                <Label layoutX="109.0" layoutY="25.0" prefHeight="35.0" prefWidth="61.0" text="login" wrapText="true">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                </Label>
+                <Button id="botaoAcessar" fx:id="logar" defaultButton="true" layoutX="106.0" layoutY="227.0" mnemonicParsing="false" onAction="#botaologar" style="-fx-background-color: #6CDDF5;" text="logar">
+                    <font>
+                        <Font name="Arial Bold" size="12.0" />
+                    </font>
+                </Button>
+                <Label id="errocadastro" fx:id="errocadastro" layoutX="178.0" layoutY="389.0" textFill="#e10719" />
+            <Button id="botaoAcessar" fx:id="voltarTela" layoutX="21.0" layoutY="289.0" mnemonicParsing="false" onAction="#voltar" rotate="180.0" style="-fx-background-color: #6CDDF5;" text="➜">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+               </font>
+            </Button>
+            </children>
+        </Pane>
+    </children>
+</Pane>

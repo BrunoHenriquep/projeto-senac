@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="447.0" prefWidth="521.0" style="-fx-background-color: #F5D56C; -fx-border-color: #1b1a1a; -fx-border-width: 0;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.UsuarioController">
+   <children>
+      <AnchorPane layoutX="15.0" layoutY="15.0" prefHeight="417.0" prefWidth="492.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <TextField fx:id="codigo" layoutX="184.0" layoutY="21.0" onAction="#updateProductInfo" prefHeight="25.0" prefWidth="124.0" />
+            <ImageView fx:id="produtosimages" fitHeight="223.0" fitWidth="216.0" layoutX="255.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+      </ImageView>
+            <Hyperlink fx:id="login" layoutX="14.0" layoutY="10.0" onAction="#Logintela" prefHeight="23.0" prefWidth="21.0" text="✚" textFill="#1b1a1a" />
+            <Label fx:id="preco" alignment="CENTER" graphicTextGap="10.0" layoutX="14.0" layoutY="81.0" prefHeight="109.0" prefWidth="216.0" textFill="#070101" textOverrun="CENTER_WORD_ELLIPSIS">
+               <font>
+                  <Font name="System Bold" size="40.0" />
+               </font>
+            </Label>
+            <Label fx:id="descricao" alignment="CENTER" layoutX="25.0" layoutY="197.0" prefHeight="84.0" prefWidth="216.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
