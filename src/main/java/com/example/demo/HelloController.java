@@ -4,11 +4,9 @@ import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.control.cell.TextFieldListCell;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
-import java.awt.event.ActionEvent;
 import java.io.File;
 import java.io.IOException;
 import java.sql.Connection;
@@ -48,12 +46,20 @@ public class HelloController {
 
     private Stage stage;
 
+    @FXML
+    private Button irRemovProd;
+
     private void limparTela(){
         caminhodaimagem.setText("");
         codBarras.setText("");
         preco.setText("");
         descricao.setText("");
         imagem.setImage(null);
+    }
+    @FXML
+    public void IrRemovProd()throws IOException {
+        Stage stage = (Stage) irRemovProd.getScene().getWindow();
+        SceneSwitcher.switchScene(stage, "Removprod-view.fxml");
     }
 
 

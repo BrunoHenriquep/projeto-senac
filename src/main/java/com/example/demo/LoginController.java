@@ -41,9 +41,9 @@ public class LoginController {
     }
     @FXML
     public void trocartela() throws IOException {
-            Stage stage = (Stage) email.getScene().getWindow();
-            SceneSwitcher.switchScene(stage, "hello-view.fxml");
-        }
+        Stage stage = (Stage) email.getScene().getWindow();
+        SceneSwitcher.switchScene(stage, "hello-view.fxml");
+    }
 
     @FXML
     public void voltar()throws IOException {
@@ -78,8 +78,6 @@ public class LoginController {
     private void mudarTela() throws IOException {
         Stage stage = (Stage) email.getScene().getWindow();
         SceneSwitcher.switchScene(stage, "hello-view.fxml");
-      SceneSwitcher.switchScene(stage, "main-view.fxml");
+        SceneSwitcher.switchScene(stage, "main-view.fxml");
     }
 }
-
-
